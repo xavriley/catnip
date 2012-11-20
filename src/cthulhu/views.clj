@@ -1,7 +1,7 @@
 (ns cthulhu.views
   (:use [noir.core :only [defpage defpartial]]
-        [hiccup.page-helpers :only [html5 include-css include-js]]
-        [hiccup.form-helpers]
+        [hiccup.page :only [html5 include-css include-js]]
+        [hiccup.form]
         [noir.fetch.remotes :only [defremote]])
   (:require [noir.response :as response]
             [cljsbinding.core :as binding]
